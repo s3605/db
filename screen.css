@@ -1,0 +1,192 @@
+*{
+	margin:0px;
+	padding:0px;
+	border:none;
+	font-family: 'Raleway', sans-serif;
+}
+body{
+}
+.hero{
+	width:100%;
+	height:500px;
+	background-image:url('back.jpg');
+	background-position:center;
+	background-size:cover;
+	position:relative;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	flex-direction:column;
+	background-attachment:fixed;
+}
+.hero::before{
+	content:'';
+	background-color:rgba(0,0,0,0.5);
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+.container{
+	z-index:999999;
+	text-align:left;
+}
+.container h1{
+	z-index:999999;
+	color:white;	
+	font-size:60px;
+	font-weight:600;
+	text-shadow:0px 0px 25px rgba(0,0,0,0.1);
+}
+.container p{
+	z-index:999999;
+	color:white;	
+	font-size:20px;
+	margin-top:20px;
+	text-shadow:0px 0px 25px rgba(0,0,0,0.3);
+	font-weight:600;
+	margin-left:7px;
+}
+.info1{
+	width:100%;
+	height:500px;
+	display:flex;
+	box-sizing:border-box;
+}
+.info1 .left{
+	background-color:white;
+	width:50%;
+	height:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+}
+.info1 .right{
+	background-color:#f3f3f3;
+	width:50%;
+	height:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	flex-direction:column;
+}
+.info1 .right h1{
+	margin:20px 0px;
+	font-weight:600;
+}
+.info1 .right p{
+	font-weight:600;
+}
+.info2{
+	width:100%;
+	height:500px;
+	display:flex;
+	box-sizing:border-box;
+}
+.info2 .left{
+	background-color:#f3f3f3;
+	width:50%;
+	height:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	flex-direction:column;
+}
+.info2 .right{
+	background-color:white;
+	width:50%;
+	height:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+}
+.info2 .left h1{
+	margin:20px 0px;
+	font-weight:600;
+}
+.info2 .left p{
+	font-weight:600;
+}
+.school-internet{
+	padding:50px;
+	box-sizing:border-box;
+	background-color:#badc58;
+	width:100%;
+	height:500px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	flex-direction:column;
+	position:relative;
+	background-image:url('teacher.png');
+	background-position:top;
+	background-size:cover;
+}
+.scont{
+	z-index:999999;
+}
+.school-internet::before{
+	content:'';
+	background-color:rgba(186, 220, 88,0.9);
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+.school-internet h1{
+	color:#424242;
+	font-weight:600;
+	font-size:50px;
+}
+.person{
+	width:100%;
+	height:50px;
+	background-size:40px;
+	background-image:url('person.png');
+	padding-bottom:10px;
+	background-repeat: repeat-x;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+}
+.school-internet1{
+	padding:50px;
+	box-sizing:border-box;
+	width:100%;
+	height:500px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	flex-direction:column;
+	position:relative;
+	background-image:url('rate.jpg');
+	background-position:top;
+	background-size:cover;
+}
+.scont{
+	z-index:999999;
+}
+.school-internet1::before{
+	content:'';
+	background-color:rgba(59,114,226,0.8);
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+.school-internet1 h1{
+	color:white;
+	font-weight:600;
+	font-size:50px;
+}
+

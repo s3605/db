@@ -1,105 +1,76 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Assignments</title>
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
-    </head>
-    <body>
-        <div id="content">
-            <div class="inp">
-                <input class="search" autofocus placeholder="Search By File Name, Type or Term">
-            </div>
-            <li id='not'><p style="font-weight:bold">File Name</p><p style="font-weight:bold">Type</p><p style="font-weight:bold">Final Due</p><p style="font-weight:bold;margin-left:200px;">Subject</p></li>
-            <ul class="list" id='cont'>
-            </ul>
-        </div>    
-    </body>
-    <style>
-        .inp{
-            background-color:white;
-            width:100%;
-            box-shadow:0px 0px 25px rgba(0,0,0,0.09);
-            box-sizing:border-box;
-            padding:5px;
-            border-radius:3px;
-            margin-bottom:30px;
-        }
-        *{
-            margin:0px;
-            padding:0px;
-            font-family: 'Muli', sans-serif;
-        } 
-        #content{
-            padding:20px;
-        }
-        body{
-        }
-        #not{
-            border:0px;
-        }
-        #not:hover{
-            background-color:white;
-            color:black;
-        }
-        p{
-            color:#4a4a4a;
-        }
-        li{
-            display:flex;
-            border:solid 2px white;
-            padding:10px;
-            box-sizing:border-box;
-        }
-        li a:first-child, li p:first-child{
-           margin-right:60px; 
-           width:300px;
-        }
-        li p:nth-child(2){
-            width:250px;
-        }
-        a{
-        color:#656565;
-        text-decoration:none;
-        }
-        h1{
-            font-size:20px;
-            width:100%;
-            text-align:center;
-            font-weight:400;
-            margin-bottom:40px;
-        }
-        li:hover{
-            background-color:#437be6;
-            cursor:pointer;
-        }
-        li:hover p, li:hover a{
-            color:white;
-        }
-        input{
-            outline:none;
-            border:none;
-            border-radius:3px;
-            padding:15px;
-            background-color:#f4f5f9;
-            box-sizing:border-box;
-            width:100%;
-        }
-        input::placeholder{
-            letter-spacing:0.5px;
-            font-weight:700;
-        }
-    </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-    <script>
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-             document.getElementById("cont").innerHTML = this.responseText;
-        }
-      };
-      xhttp.open("GET", "files.txt", true);
-      xhttp.send();
-      var url = "script.js";
-      $.getScript(url);
-    </script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Infographic</title>
+		<link rel="stylesheet" type="text/css" href="screen.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,900" rel="stylesheet">
+	</head>
+	<body>
+		<div class="hero">
+			<div class="container">
+				<h1>Year 4 vs Year 5 Technology Usage</h1>		
+				<p>By Sam Winborn-Sharp</p>		
+			</div>
+		</div>
+			<div class="info1" style="border-top:10px solid #badc58;">
+				<div class="left">
+					<img src="school.png" alt=""/>	
+				</div>	
+				<div class="right">
+					<img src="social-media.png" width="100px" alt=""/>
+					<h1>Year 4 Subject Tech Usage</h1>
+					<p>Majority Usage : Media</p>
+					<p style="margin-top:10px;font-weight:400;">Students Surveyed : 32</p>
+				</div>	
+			</div>
+			<div class="info2">
+				<div class="left">
+					<img src="social-media.png" width="100px" alt=""/>
+					<h1>Year 5 Subject Tech Usage</h1>
+					<p>Majority Usage : Problem Based Learning</p>
+					<p style="margin-top:10px;font-weight:400;">Students Surveyed : 47</p>
+				</div>	
+				<div class="right">
+					<img src="school1.png" alt=""/>	
+				</div>	
+			</div>
+			<div class="school-internet">
+				<div class="scont">
+					<p style="font-weight:900;font-size:50px;color:#424242;margin-bottom:20px;">99%</p>	
+					<h1> of Teachers Intergrate Technology Well Into Lessons</h1>	
+				</div>
+			</div>
+			<div class="info1">
+				<div class="left">
+					<img src="lapuse.png" alt=""/>	
+				</div>	
+				<div class="right">
+					<img src="laptop.png" width="100px" alt=""/>
+					<h1>Most Popular Device</h1>
+					<p>Majority Use : Laptop</p>
+					<p style="margin-top:10px;font-weight:400;">Students Surveyed : 62</p>
+				</div>	
+			</div>
+			<div class="info2">
+				<div class="left">
+					<img src="fun.png" width="100px" alt=""/>
+					<h1>Positives Of Tech In Class</h1>
+					<p>Majority Usage : Makes Lessons More Interesting</p>
+					<p style="margin-top:10px;font-weight:400;">Students Surveyed : 65</p>
+				</div>	
+				<div class="right">
+					<img src="funn.png" alt=""/>	
+				</div>	
+			</div>
+			<div class="school-internet1" style="background-attachment:fixed;background-image:url('rate.jpg');">
+				<div class="scont">
+					<p style="font-weight:900;font-size:50px;color:white;margin-bottom:20px;">1.87</p>	
+					<h1>From 1 to 5 Rate the Schools Internet</h1>	
+					<h1 style="font-size:20px;font-weight:400;">(5 Being The Best)</h1>	
+				</div>
+			</div>
+			<center><p style="background-color:#212121;color:white;padding:10px;box-sizing:border-box;">Made By Sam</p></center>
+	</body>
 </html>
